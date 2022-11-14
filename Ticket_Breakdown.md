@@ -26,7 +26,7 @@ Column to store customIds against individual agent in Agent Table
  ### acceptance criteria
   - Column should be indexed so that is will better for searches
  ### unknowns:
-  - Type of id. (can be a number or string).
+  - Type of customId. (can be a number or string).
   - Max Length of the id.
   - Can it be null ? I mean is it a required field at the time of creation or it will be updated later. So accordingly column can be null or not null.
   ### time/effort estimates
