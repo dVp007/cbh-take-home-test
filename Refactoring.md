@@ -9,3 +9,12 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+I tried reducing the branching statements and made the function straight forward. Firstly, before it was checking all the conditions if there is no event in the input, so I refactored it and tested the condition in the beginning and returned. This prevents it from checking different conditions. Secondly, I used conditional statement to check if partition key is string or no so it's more readable and easily understood. Finally, I would like to explain all my test cases:
+1. Returns the literal '0' when given no input
+2. Returns a key when input is given
+3. Returns a key when input is given with more than 256 letters
+4. Returns the key when input is given with partitionKey in an object
+5. Returns the key when input is given with partitionKey in an object with more than 256 letters
+6. Returns the key when input is given with partitionKey in an object in not a string
+7. Returns the key when input is a random object in not a string 

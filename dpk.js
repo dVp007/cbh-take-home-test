@@ -9,6 +9,7 @@ exports.deterministicPartitionKey = (event) => {
     if (!event && !candidate) {
       // if no event candidate
       candidate = TRIVIAL_PARTITION_KEY;
+      return candidate;
     } else {
       // check if event has partition key
       if (event.partitionKey) {

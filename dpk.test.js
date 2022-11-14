@@ -8,14 +8,14 @@ describe("deterministicPartitionKey", () => {
 });
 
 describe("deterministicPartitionKey", () => {
-  it("Returns the literal key when input is given", () => {
+  it("Returns a key when input is given", () => {
     const trivialKey = deterministicPartitionKey("Dharmil");
     expect(trivialKey).not.toBe("0");
   });
 });
 
 describe("deterministicPartitionKey", () => {
-  it("Returns the key when input is given with more than 256 letters", () => {
+  it("Returns a key when input is given with more than 256 letters", () => {
     const trivialKey = deterministicPartitionKey(
       "MawVW5QLA8ED6Tl820X1AeAxjzdf7KbMav8PN9QcZUPERrNn00FyaQcCgmj67zHMLwVdqyfmnlEegbsiQOc8A5lX02HGrKwRYRTcEUTCuWDG9GY8v1FNP5Kkp9z59EbiDpBokBfoj2dNgaB7429uGTXFEtACLGRcrOMOvkBZJYYYcTSKBxQycXUmAIcN4J2oYp4wQAZcj2WfzKBuEYeLho2VySOZFeCtWHrjXyfV5Bfa44Uh3PzVQhnx1isw7bQCasdasd"
     );
