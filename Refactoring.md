@@ -10,7 +10,7 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 
 ## Your Explanation Here
 
-I tried reducing the branching statements and made the function straight forward. Firstly, before it was checking all the conditions if there is no event in the input, so I refactored it and tested the condition in the beginning and returned. This prevents it from checking different conditions. Secondly, I used conditional statement to check if partition key is string or no so it's more readable and easily understood. Finally, I would like to explain all my test cases:
+I tried reducing the branching statements and made the function straight forward. Firstly, before it was checking all the conditions if there is no event in the input, so I refactored it and tested the condition in the beginning and returned. This prevents it from checking different conditions. Secondly, I used conditional statement to check if partition key is string or no so it's more readable and easily understood.Also, I added try and catch so error handling is also introduced in the new code. Finally, I would like to explain all my test cases:
 1. Returns the literal '0' when given no input
 2. Returns a key when input is given
 3. Returns a key when input is given with more than 256 letters
