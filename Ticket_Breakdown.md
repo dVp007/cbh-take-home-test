@@ -25,6 +25,7 @@ Column to store customIds against individual agent in Agent Table
  1. Create a column in Agent table. 
  ### acceptance criteria
   - Column should be indexed so that is will better for searches
+  - Column should be unique
  ### unknowns:
   - Type of customId. (can be a number or string).
   - Max Length of the id.
